@@ -1,4 +1,5 @@
 import React from 'react';
+import NeuralBackground from './NeuralBackground';
 import { EDUCATION } from '../constants';
 import { useTranslation } from 'react-i18next';
 
@@ -6,8 +7,12 @@ import { useTranslation } from 'react-i18next';
 const EducationSection: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section id="education" className="bg-white py-32 px-4 scroll-mt-20">
-      <div className="max-w-5xl mx-auto">
+    <section id="education" className="bg-white py-32 px-4 scroll-mt-20 relative overflow-hidden">
+      <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
+        {/* Neural background para fundo branco */}
+        <NeuralBackground />
+      </div>
+      <div className="max-w-5xl mx-auto relative z-10">
         <div className="text-center mb-20 space-y-3">
           <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">{t('education_certifications')}</h2>
           <div className="w-16 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
