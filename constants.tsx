@@ -4,7 +4,7 @@ import { ExperienceItem, EducationItem, Skill } from './types';
 export const EXPERIENCES: ExperienceItem[] = [
   {
     company: "Mirante Tecnologia",
-    role: "Software Engineer | Java & AI Integration",
+    role: "UX/UI & Frontend Specialist",
     period: "2024 – Present",
     description: [
       "Arquitetura front-end escalável em React com foco em alta performance e UX/UI refinado",
