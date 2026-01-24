@@ -1,3 +1,13 @@
+/// <reference types="vite/client" />
+
+interface ImportMetaEnv {
+  readonly BASE_URL: string;
+  // outras variáveis de ambiente do Vite podem ser adicionadas aqui
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}
 
 export interface ExperienceItem {
   company: string;

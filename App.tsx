@@ -67,7 +67,7 @@ const App: React.FC = () => {
               <div className="absolute -inset-4 bg-blue-500 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 overflow-hidden rounded-[2.5rem] shadow-2xl border-8 border-white bg-slate-100">
                 <img 
-                  src="/assets/images/kleiton_foto.jpg" 
+                  src={`${import.meta.env.BASE_URL}assets/images/kleiton_foto.jpg`} 
                   alt="Kleiton Albuquerque" 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   onError={(e) => {
