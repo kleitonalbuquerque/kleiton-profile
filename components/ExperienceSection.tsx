@@ -15,7 +15,7 @@ const ExperienceSection: React.FC = () => {
         <div className="space-y-8">
           {EXPERIENCES.map((exp, idx) => (
             <div 
-              key={idx} 
+              key={exp.company + exp.period} 
               className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500"
             >
               <div className="flex flex-col md:flex-row justify-between md:items-center mb-8 gap-4">
@@ -29,7 +29,7 @@ const ExperienceSection: React.FC = () => {
               </div>
               <ul className="space-y-4">
                 {exp.description.map((item, i) => (
-                  <li key={i} className="flex items-start gap-4 text-gray-600 leading-relaxed">
+                  <li key={item.slice(0, 32)} className="flex items-start gap-4 text-gray-600 leading-relaxed">
                     <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
                     {t(`exp_${idx}_desc_${i}`, item)}
                   </li>

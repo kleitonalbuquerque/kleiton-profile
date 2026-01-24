@@ -7,10 +7,10 @@ export const EXPERIENCES: ExperienceItem[] = [
     role: "Software Engineer | Java & AI Integration",
     period: "2024 – Present",
     description: [
-      "Desenvolvimento de aplicações robustas utilizando Java e Spring Boot para o Governo de Mato Grosso",
-      "Integração estratégica de IA generativa (Gemini LLM) com backends em Python para automação de processos",
       "Arquitetura front-end escalável em React com foco em alta performance e UX/UI refinado",
-      "Criação de protótipos de alta fidelidade no Figma e colaboração com stakeholders"
+      "Criação de protótipos de alta fidelidade no Figma e colaboração com stakeholders",
+      "Implementação de testes unitários automatizados para garantir a qualidade e robustez do código",
+      "Aplicação de práticas da metodologia SAFe para gestão ágil de projetos em larga escala",
     ]
   },
   {

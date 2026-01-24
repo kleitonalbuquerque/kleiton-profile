@@ -1,15 +1,22 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import ReactCountryFlag from 'react-country-flag';
 // Bandeiras SVG inline para melhor performance
 const flags = {
   en: (
-    <img src="/assets/images/flag_us.png" alt="English" className="w-7 h-7 rounded-full border border-gray-200 shadow object-cover" />
+    <span className="block w-7 h-7 rounded-full border border-gray-200 shadow overflow-hidden flex items-center justify-center bg-white">
+      <ReactCountryFlag countryCode="US" svg style={{ width: '100%', height: '100%', borderRadius: '50%' }} />
+    </span>
   ),
   pt: (
-    <img src="/assets/images/flag_br.png" alt="Português" className="w-7 h-7 rounded-full border border-gray-200 shadow object-cover" />
+    <span className="block w-7 h-7 rounded-full border border-gray-200 shadow overflow-hidden flex items-center justify-center bg-white">
+      <ReactCountryFlag countryCode="BR" svg style={{ width: '100%', height: '100%', borderRadius: '50%' }} />
+    </span>
   ),
   es: (
-    <img src="/assets/images/flag_es.png" alt="Español" className="w-7 h-7 rounded-full border border-gray-200 shadow object-cover" />
+    <span className="block w-7 h-7 rounded-full border border-gray-200 shadow overflow-hidden flex items-center justify-center bg-white">
+      <ReactCountryFlag countryCode="ES" svg style={{ width: '100%', height: '100%', borderRadius: '50%' }} />
+    </span>
   )
 };
 
