@@ -1,7 +1,11 @@
 
 import React, { useEffect, useRef } from 'react';
 
-const NeuralBackground: React.FC = () => {
+interface NeuralBackgroundProps {
+  color?: string;
+}
+
+const NeuralBackground: React.FC<NeuralBackgroundProps> = ({ color = 'rgba(100, 116, 139, 0.4)' }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -41,7 +45,7 @@ const NeuralBackground: React.FC = () => {
       draw(context: CanvasRenderingContext2D) {
         context.beginPath();
         context.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        context.fillStyle = 'rgba(100, 116, 139, 0.4)';
+        context.fillStyle = color;
         context.fill();
       }
     }
@@ -75,7 +79,8 @@ const NeuralBackground: React.FC = () => {
 
           if (distance < connectionDistance) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(100, 116, 139, ${0.2 * (1 - distance / connectionDistance)})`;
+            // Linhas também em azul, mas mais translúcido
+            ctx.strokeStyle = color.replace('1)', `${0.15 * (1 - distance / connectionDistance)})`).replace('0.4)', `${0.15 * (1 - distance / connectionDistance)})`);
             ctx.lineWidth = 1;
             ctx.moveTo(p1.x, p1.y);
             ctx.lineTo(p2.x, p2.y);

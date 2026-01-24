@@ -1,13 +1,17 @@
 import React from 'react';
 import { EXPERIENCES } from '../constants';
 import { useTranslation } from 'react-i18next';
+import NeuralBackground from './NeuralBackground';
 
 
 const ExperienceSection: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section id="experience" className="bg-gray-50 py-32 px-4 scroll-mt-20 border-y border-gray-100">
-      <div className="max-w-5xl mx-auto">
+    <section id="experience" className="relative bg-gray-900 py-32 px-4 scroll-mt-20 border-y border-gray-100 overflow-hidden">
+      <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
+        <NeuralBackground color="#3b82f6" />
+      </div>
+      <div className="max-w-5xl mx-auto relative z-10">
         <div className="text-center mb-20 space-y-3">
           <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">{t('professional_experience')}</h2>
           <div className="w-16 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
