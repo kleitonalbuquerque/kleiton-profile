@@ -1,12 +1,12 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Kleiton Albuquerque - Portfolio
 
-# Run and deploy your AI Studio app
+Landing Page profissional desenvolvida em React + Vite para apresentação de perfil, experiência, skills e contato.
 
-This contains everything you need to run your app locally.
+- Internacionalização (i18n)
+- Deploy automático no GitHub Pages após merge na main
+- Layout responsivo e moderno
 
-View your app in AI Studio: https://ai.studio/apps/drive/1ODJjZ8gQAro5ZJ3BGs8I7gYY9qShx3Cf
+Acesse em: https://kleitonalbuquerque.github.io/kleiton-profile/
 
 ## Run Locally
 
