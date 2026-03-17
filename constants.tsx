@@ -15,7 +15,7 @@ export const EXPERIENCES: ExperienceItem[] = [
   },
   {
     company: "YDUQS",
-    role: "Software Engineer | Java, Node & React Specialist",
+    role: "Software Developer | Java, Node & React Specialist",
     period: "2020 – 2024",
     description: [
       "Liderança técnica no desenvolvimento de sistemas educacionais utilizando Java (Spring) e Node.js",
