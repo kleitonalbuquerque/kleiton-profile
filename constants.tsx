@@ -18,7 +18,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     role: "Software Developer | Java, Node & React Specialist",
     period: "2020 – 2024",
     description: [
-      "Liderança técnica no desenvolvimento de sistemas educacionais utilizando Java (Spring) e Node.js",
+      "Atuação no desenvolvimento de sistemas educacionais utilizando metodologias ágeis e cerimônias do Scrum",
       "Construção de aplicações web modernas com React, Next.js e NestJS",
       "Design de APIs RESTful escaláveis e seguras atendendo milhares de usuários",
       "Foco em acessibilidade (WCAG), performance e manutenibilidade de código (Clean Code)"
