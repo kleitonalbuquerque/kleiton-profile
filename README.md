@@ -1,20 +1,26 @@
 # Kleiton Albuquerque - Portfolio
 
-Landing Page profissional desenvolvida em React + Vite para apresentação de perfil, experiência, skills e contato.
+Landing page profissional desenvolvida em React + Vite para apresentacao de perfil, experiencia, skills e contato.
 
-- Internacionalização (i18n)
-- Deploy automático no GitHub Pages após merge na main
+- Internacionalizacao (i18n)
+- Publicacao em GitHub Pages para URL raiz e project page
 - Layout responsivo e moderno
 
-Acesse em: https://kleitonalbuquerque.github.io/kleiton-profile/
+Acesse em:
+- https://kleitonalbuquerque.github.io/
+- https://kleitonalbuquerque.github.io/kleiton-profile/
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
    `npm install`
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Deploy
+
+- `npm run deploy:project`: publica em `https://kleitonalbuquerque.github.io/kleiton-profile/`
+- `npm run deploy:root`: publica em `https://kleitonalbuquerque.github.io/`

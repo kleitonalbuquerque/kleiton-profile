@@ -4,8 +4,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
+    const basePath = env.APP_BASE_PATH || '/kleiton-profile/';
     return {
-      base: '/kleiton-profile/',
+      base: basePath,
       server: {
         port: 3000,
         host: '0.0.0.0',

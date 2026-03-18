@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run build:project",
+    "build:project": "node ./scripts/run-vite-build.mjs /kleiton-profile/",
+    "build:root": "node ./scripts/run-vite-build.mjs /",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run deploy:project",
+    "deploy:project": "npm run build:project && node ./scripts/publish-dist.mjs git@github.com:kleitonalbuquerque/kleiton-profile.git gh-pages",
+    "deploy:root": "npm run build:root && node ./scripts/publish-dist.mjs git@github.com:kleitonalbuquerque/kleitonalbuquerque.github.io.git master"
   },
   "dependencies": {
     "@google/genai": "^1.37.0",
